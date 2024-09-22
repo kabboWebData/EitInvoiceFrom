@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .invoice-container {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+        .header {
+            background-color: #1C5D99;
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .header .company-info {
+            text-align: right;
+        }
+        .company-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .company-details {
+            margin: 10px 0 0 0;
+        }
+        .invoice-details {
+            margin-top: 20px;
+            width: 100%;
+        }
+        .invoice-details th, .invoice-details td {
+            text-align: left;
+            padding: 10px;
+        }
+        .invoice-details th {
+            background-color: #f2f2f2;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .table th {
+            background-color: #f4f4f4;
+        }
+        .total-section {
+            background-color: #1C5D99;
+            color: #fff;
+            text-align: right;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-container">
+        <div class="header" style="display: flex; justify-content: space-between;">
+            <div class="logo">
+                <img src="essential.jpg" alt="Company Logo" style="width: 50px; border-radius:8px ">
+            </div>
+            <div class="company-info">
+                <div class="company-name">Essential Infotech</div>
+                <div class="company-details">
+                    <div>Super House, Gareeb-e-Nawaz Ave, Dhaka 1230</div>
+                    <div>Phone: 01676-053114</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bill-to" style="margin-top: 20px;">
+            <strong>Bill To:</strong>
+            <p>Company Name : <br>Address :</p>
+        </div>
+
+        <table class="invoice-details" style="width: 100%; margin-top: 20px;">
+            <tr>
+                <td><strong>Invoice #</strong><br>000001</td>
+                <td><strong>Date</strong><br>21/09/2024</td>
+                <td><strong>Invoice Due Date</strong><br>17/10/2024</td>
+            </tr>
+        </table>
+
+        <table class="table">
+            <tr>
+                <th>Items</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Tax</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>Item 1</td>
+                <td>Headphones</td>
+                <td>5</td>
+                <td>5000</td>
+                <td>0%</td>
+                <td>$0.00</td>
+            </tr>
+            <tr>
+                <td>Item 2</td>
+                <td>SSD</td>
+                <td>512gb</td>
+                <td>2000</td>
+                <td>0%</td>
+                <td>$0.00</td>
+            </tr>
+            <tr>
+                <td>Item 3</td>
+                <td>Domain</td>
+                <td>1</td>
+                <td>5000</td>
+                <td>0%</td>
+                <td>$0.00</td>
+            </tr>
+            <tr>
+                <td>Item 4</td>
+                <td>AC</td>
+                <td>2</td>
+                <td>180000</td>
+                <td>0%</td>
+                <td>$0.00</td>
+            </tr>
+        </table>
+
+        <div class="total-section">
+            Total: 192000 Tk
+        </div>
+
+        <div class="notes-section" style="margin-top: 20px; padding: 10px; background-color: #f9f9f9;">
+            <strong>Notes:</strong>
+            <p> We specialize in delivering innovative and high-quality software solutions tailored to meet your business needs</p>
+        </div>
+
+        <div class="footer">
+            Powered by Essentail Infotech | This invoice was created with the help of Essential Infotech | www.essentialinfotech.com
+        </div>
+    </div>
+</body>
+</html>
